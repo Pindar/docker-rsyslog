@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Simon Dittlmann <simon.dittlmann@tado.com>
+MAINTAINER Simon Dittlmann
 
 RUN apt-get update -qq && \
   apt-get install --no-install-recommends -y -qq software-properties-common python-software-properties && \
@@ -14,8 +14,7 @@ RUN apt-get install -y -qq \
 	build-essential \
 	fakeroot \
 	dpkg-dev \
-	libcurl4-openssl-dev \
-	libcurl4-gnutls-dev
+	libcurl4-openssl-dev
 
 RUN apt-get source -y -qq rsyslog
 
