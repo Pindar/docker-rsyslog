@@ -1,7 +1,7 @@
 docker-rsyslog
 ==============
 
-You can use this docker image to setup a central rsyslog server which ships all logs to an elasticsearch cluster and creates a log file per %programmname% to `/var/log/remote`.
+You can use this docker image to setup a central rsyslog server that ships all logs to an elasticsearch cluster and creates a log file per %programname% to `/var/log/remote`.
 
 ```
 docker run \
