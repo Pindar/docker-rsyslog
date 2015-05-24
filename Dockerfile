@@ -11,7 +11,7 @@ RUN apt-get update -qq && \
   apt-get -y -qq autoremove && \
   apt-get -y -qq clean
 
-RUN apt-get install -y -qq rsyslog-elasticsearch && \
+RUN apt-get install -y -qq rsyslog-elasticsearch rsyslog-mmjsonparse && \
   apt-get -y -qq clean
 
 

@@ -7,4 +7,4 @@ else
   echo "WARNING: $ELASTICSEARCH_HOST environment variable is empty";
 fi
 
-exec /usr/sbin/rsyslogd -n
+exec /usr/sbin/rsyslogd -dn
