@@ -18,6 +18,7 @@ RUN apt-get install -y -qq rsyslog-elasticsearch rsyslog-mmjsonparse && \
 ENV RSYSLOG_CENTRAL_CONF 30-central.conf
 COPY conf/rsyslog.conf /etc/rsyslog.conf
 COPY conf/$RSYSLOG_CENTRAL_CONF /etc/rsyslog.d/$RSYSLOG_CENTRAL_CONF
+RUN rm -f /etc/rsyslog.d/50-default.conf
 
 EXPOSE 514/tcp 514/udp
 
